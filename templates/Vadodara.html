@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<!--let's see how it goes-->
+<head>
+<style>body {
+  background-image: url('https://ak8.picdn.net/shutterstock/videos/17548918/thumb/1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+</style>
+<title>Vadodara Price prediction</title>
+</head>
+
+<body>
+<div class="login">
+<h1>PREDICT PRICE OF HOUSE</h1>
+<h1>YOU CAN ONLY PUT NUMERIC FORM OF DATA</h1>
+<form action="{{url_for('predict')}}"method="post">
+<input type="text" name="h_type" placeholder="h_type" required="required"/>
+<input type="text" name="location" placeholder="location" required="required"/>
+<input type="text" name="size" placeholder="size" required="required"/>
+<input type="text" name="bathroom" placeholder="bathroom" required="required"/>
+<input type="text" name="balcony" placeholder="balcony" required="required"/>
+<input type="text" name="total_sqrt" placeholder="total_sqrt" required="required"/>
+<button type="submit" class="btn btn-primary btn-block btn-large">PREDICT</button>
+</form>
+<br>
+{{prediction_txt}}</br>
+
+
+</div><br></br>
+<div>H_TYPE :
+<br></br>
+apartment =0,     
+duplex =1,
+villa =2,
+pent house =3,
+triplex =4,
+tenament =5,
+</div><br></br>
+<div>LOCATION :
+<br></br>
+Harni=0,
+Waghodia Road =1,
+Bhayli =2,
+Fatehgunj =3,
+New Karelibaugh =4,
+Ajwa Road =5,
+Karelibaug =6,
+Chhani =7,
+New Alkapuri =8,
+New VIP Road =9,
+Alkapuri =10,
+Akota =11,
+Manjalpur =12,
+Laxmipura =13,
+Vasna-Bhayli Road =14,
+Vasna Road =15,
+Atladra =16,
+Sayajipura =17,
+Maneja =18,
+Sama =19,
+Navapura =20,
+Khodiyar Nagar =21,
+Gotri =22,
+Vasant Vihar =23,
+New Sama =24,
+Madhav Pura =25,
+Soma Talav =26,
+Gorwa =27,
+Mandvi =28               1
+</div>
+<br></br>
+<div>
+SIZE:<br></br>
+3BHK =0,
+2BHK =1,
+4BHK =2,
+1BHK =3,
+5BHK =4
+</div><br></br>
+<div>
+BATHROOM<br></br>
+3=0,
+2=1,
+4=2,
+1=3,
+5=4,
+6=5,
+0=6
+</div><br></br>
+<div>
+BALCONY<br></br>
+1=0,
+2=1,
+3=2,
+0=3,
+4=4,
+5=5
+<br></br>
+<div>
+
+</div>
+</div>
+
+
+</body>
+</html>
